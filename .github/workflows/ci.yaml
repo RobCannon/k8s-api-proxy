@@ -1,7 +1,7 @@
 name: Build Docker Image
 
 # See build results at
-# https://github.com/RobCannon/k8-api-proxy/actions
+# https://github.com/RobCannon/k8s-api-proxy/actions
 
 # This workflow is triggered on pushes with a version tag to repository.
 on:
@@ -27,5 +27,5 @@ jobs:
         uses: VaultVulp/gp-docker-action@1.0.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages
-          image-name: k8-api-proxy # Provide only Docker image name
+          image-name: k8s-api-proxy # Provide only Docker image name
           extract-git-tag: true # Provide flag to extract Docker image tag from git reference
